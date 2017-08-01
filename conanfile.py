@@ -8,7 +8,8 @@ class BoostVmdConan(ConanFile):
     description = "For a description of this library, please visit http://boost.org/vmd "
     license = "www.boost.org/users/license.html"
     lib_short_name = "vmd"
-
+    requires = "Boost.Preprocessor/1.64.0@bincrafters/testing"
+    
     def source(self):
         self.run("git clone --depth=50 --branch=boost-{0} {1}.git"
                  .format(self.version, self.url))
