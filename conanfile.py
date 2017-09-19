@@ -8,7 +8,7 @@ class BoostVmdConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["vmd"]
-    requires = "Boost.Preprocessor/1.65.1@bincrafters/testing"
+    requires = "Boost.Preprocessor/1.65.1@bincrafters/stable"
     
     def source(self):
         boostorg_github = "https://github.com/boostorg"
