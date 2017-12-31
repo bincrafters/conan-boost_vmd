@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostVmdConan(ConanFile):
     name = "boost_vmd"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-vmd"
+    url = "https://github.com/bincrafters/conan-boost_vmd"
 
     lib_short_names = ["vmd"]
     is_header_only = True
