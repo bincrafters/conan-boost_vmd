@@ -8,7 +8,8 @@ class BoostVmdConan(ConanFile):
     name = "boost_vmd"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_vmd"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["vmd"]
     is_header_only = True
 
