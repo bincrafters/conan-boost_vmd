@@ -6,7 +6,7 @@ from conans import ConanFile, tools
 
 class BoostVmdConan(ConanFile):
     name = "boost_vmd"
-    version = "1.66.0"
+    version = "1.65.1"
     url = "https://github.com/bincrafters/conan-boost_vmd"
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
@@ -17,8 +17,8 @@ class BoostVmdConan(ConanFile):
         self.info.header_only()
     
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_preprocessor/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.65.1@bincrafters/testing",
+        "boost_preprocessor/1.65.1@bincrafters/testing"
     )
 
     # BEGIN
@@ -26,7 +26,7 @@ class BoostVmdConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "BSL-1.0"
     short_paths = True
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.65.1@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
