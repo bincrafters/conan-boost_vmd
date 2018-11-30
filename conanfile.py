@@ -4,15 +4,11 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.67.0@bincrafters/testing")
+base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostVmdConan(base.BoostBaseConan):
     name = "boost_vmd"
     url = "https://github.com/bincrafters/conan-boost_vmd"
     lib_short_names = ["vmd"]
     header_only_libs = ["vmd"]
-    b2_requires = [
-        "boost_preprocessor"
-    ]
-
-
+    b2_requires = ["boost_preprocessor"]
